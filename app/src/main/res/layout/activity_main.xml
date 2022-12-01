@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/cell_4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        style="@style/image_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.25" />
+
+    <ImageView
+        android:id="@+id/cell_0"
+        style="@style/image_background"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/cell_4"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintEnd_toStartOf="@id/cell_4"
+        app:layout_constraintWidth_percent="0.25" />
+
+    <ImageView
+        android:id="@+id/cell_1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        style="@style/image_background"
+        app:layout_constraintBottom_toTopOf="@+id/cell_4"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintStart_toStartOf="@id/cell_4"
+        app:layout_constraintWidth_percent="0.25" />
+
+    <ImageView
+        android:id="@+id/cell_2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        style="@style/image_background"
+        app:layout_constraintBottom_toTopOf="@+id/cell_4"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintStart_toEndOf="@id/cell_4"
+        app:layout_constraintWidth_percent="0.25" />
+
+    <ImageView
+        android:id="@+id/cell_3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        style="@style/image_background"
+        app:layout_constraintBottom_toBottomOf="@+id/cell_4"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintEnd_toStartOf="@id/cell_4"
+        app:layout_constraintWidth_percent="0.25" />
+
+    <ImageView
+        android:id="@+id/cell_5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        style="@style/image_background"
+        app:layout_constraintBottom_toBottomOf="@+id/cell_4"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintStart_toEndOf="@id/cell_4"
+        app:layout_constraintWidth_percent="0.25" />
+
+    <ImageView
+        android:id="@+id/cell_6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        style="@style/image_background"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintEnd_toStartOf="@id/cell_4"
+        app:layout_constraintTop_toBottomOf="@+id/cell_4"
+        app:layout_constraintWidth_percent="0.25" />
+
+    <ImageView
+        android:id="@+id/cell_7"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        style="@style/image_background"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintStart_toStartOf="@id/cell_4"
+        app:layout_constraintTop_toBottomOf="@+id/cell_4"
+        app:layout_constraintWidth_percent="0.25" />
+
+    <ImageView
+        android:id="@+id/cell_8"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        style="@style/image_background"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintStart_toEndOf="@id/cell_4"
+        app:layout_constraintTop_toBottomOf="@+id/cell_4"
+        app:layout_constraintWidth_percent="0.25" />
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        app:layout_constraintEnd_toEndOf="@id/cell_2"
+        app:layout_constraintStart_toStartOf="@id/cell_0"
+        app:layout_constraintTop_toBottomOf="@id/cell_1" />
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        app:layout_constraintEnd_toEndOf="@id/cell_2"
+        app:layout_constraintStart_toStartOf="@id/cell_0"
+        app:layout_constraintTop_toBottomOf="@id/cell_4" />
+
+    <FrameLayout
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toBottomOf="@id/cell_7"
+        app:layout_constraintStart_toStartOf="@id/cell_4"
+        app:layout_constraintTop_toTopOf="@id/cell_1" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toBottomOf="@id/cell_7"
+        app:layout_constraintStart_toEndOf="@id/cell_4"
+        app:layout_constraintTop_toTopOf="@id/cell_1" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="Reset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/winner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:alpha="0.9"
+        android:textColor="@color/black"
+        android:background="@color/white"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Circle Wins" />
+</androidx.constraintlayout.widget.ConstraintLayout>
